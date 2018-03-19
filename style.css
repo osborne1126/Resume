@@ -1,6 +1,6 @@
 
 /*pdf*/
-/*.pdf {
+.pdf {
     left: auto;
     right: 8px;
     margin-left: 0;
@@ -25,21 +25,22 @@ a {
     text-decoration: none;
     -webkit-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
-}
+}  
 
 .last-modified {
     display: inline-block;
 }
 .last-modified {
     position: absolute;
-    top: 30px;
+    top: -10px;
     left: 50%;
     width: 1000px;
-    color: #bbb;
+    color: black;
     margin-left: -500px;
     font-size: 12px;
     text-align: right;
-} */
+    padding-right:10px;
+} 
 
 
 /*写页面功能区块*/
@@ -87,9 +88,6 @@ body{
     margin-top: 60px;   /*/////*/
 
     font-weight: bold;
-
-   //font-family: Lucida Grande,Hiragino Sans GB,Hiragino Sans GB W3,Helvetica Neue,Helvetica,Arial,Microsoft YaHei,sans-serif;
-   //font-weight: 500;
 }
 .content-hd .job {
    /*//border:1px solid blue;*/
@@ -107,8 +105,6 @@ body{
 .content-bd {
     /*//border:1px solid red;*/
     width: 100%;
-    //min-height: 200px;
-    //padding: 5px 5px;
     overflow: hidden;
     background-color: #CFE8CC;    /*////*/
 }
@@ -147,9 +143,9 @@ body{
 .content-bd .section-hd {
     position: relative;
     height: 32px;
-    margin: 10px auto 5px;
+    margin: 5px auto 5px;
     overflow: hidden;
-  /*//border:1px solid green;*/
+  /*border:1px solid green;*/
 }
 .content-bd .section-title-l {
     left: 0;
@@ -183,26 +179,26 @@ body{
 
 /*基本信息*/
 .prize .contact {
-    //float: left;
-    //text-align: left;
-    padding-left: 40px;
-border:1px solid red;
+   /* //float: left;
+    //text-align: left;*/
+    padding-left: 30px;
+/*border:1px solid red;*/
     margin:10px;
     font-size: 16px;
    
-    line-height: 1.5;
+    line-height: 1.7;
  }
 .prize.contact ul {
     text-align: center;
     margin: 16px 0 0;
  }
-.contact ul>li {
+
+/*.contact ul>li {
     //display: inline-block;
-   
     //height: 22px;
  }
  .prize .contact ul>li>a {
-    color: #fff;
+    color: #00b38a;
     font-family: Lucida Grande,Hiragino Sans GB,Hiragino Sans GB W3,Helvetica Neue,Helvetica,Arial,Microsoft YaHei,sans-serif;
     font-size: 20px;
     line-height: 22px;
@@ -214,20 +210,24 @@ border:1px solid red;
     // font-size: 16px;
    // margin-left: 5px;
    //border:1px solid red;
- }
+ } */
  
- /.iconfont {
-   
+ .icon {
+   /*//border:1px solid green;*/
      font-family: iconfont!important;
-     font-size: 16px;
+     font-size: 18px;
      font-style: normal;
      -webkit-font-smoothing: antialiased;
      -webkit-text-stroke-width: .2px;
      -moz-osx-font-smoothing: grayscale;
  }
- .icon-homepage:before {
-    content: "\E604";
- }
+ .prize .contact ul>li> .icon-link {
+   /* //display: none;
+    //display:inline-block;*/
+    margin-right:10px;
+    margin-top:10px;
+}
+  
  
 /*关于我*/
 
@@ -236,12 +236,12 @@ border:1px solid red;
     overflow: hidden;
 }
 .content-bd .section-list {
-    //padding: 10px 0 5px;
-    padding: 10px 5px 5px 10px;
+   /* //padding: 10px 0 5px;*/
+    padding: 10px 5px 5px 20px;
 }
 .content-bd .skill .section-content {
     margin-bottom: 5px;
-
+    font-size: 14px;
     text-align: justify;
     word-break: break-all;
     line-height: 22px;
@@ -276,15 +276,15 @@ p {
 }
 .content-bd .section-content strong {
     font-family: Helvetica Neue,Helvetica,Arial,Microsoft YaHei,sans-serif;
-    font-size: 12px;
+    font-size: 13px;
     line-height: 14px;
-    border: 1px solid #f3f3f3;
+    border: 1px solid #f7fcfa;
     border-radius: 3px;
     font-weight: 500;
     color: #444;
     margin: 2px;
     padding: 0 3px;
-    background-color: #f6f6f6;
+    background-color: #f2f8f8;
 }
 
 
@@ -299,13 +299,13 @@ p {
 	background-color: #eee;*/
 }
 right {
-    idth: 100%;
+    width: 100%;
 }
 
 /*项目经验*/
 .content-bd .item-hd {
     position: relative;
-    padding: 10px 0 5px;
+    padding: 5px 0 5px;
     line-height: 20px;
     overflow: hidden;
     font-weight: 500;
@@ -342,6 +342,12 @@ right {
     line-height: 18px;
     text-align: center;
     margin:0 10px 0 1px;
+}
+
+.btn:hover{
+    /*width: 70px;*/
+    background-color: #00b38a;
+    color:white;
 }
 a {
     text-decoration: none;
@@ -392,7 +398,38 @@ li {
 }
 
 /*教育工作*/
+.work .section-bd .item-hd {
+    position: relative;
+    padding: 5px 0 5px;
+    line-height: 12px;
+    overflow: hidden;
+   /* font-weight: 500;*/
+ /* border:1px solid yellow;*/
+    display: block;
+}
 
+.work .section-bd .item-hd .item-time {
+    width: 100%;
+    margin-bottom: 5px;
+    margin-left:10px;
+    display: inline-block;
+    width: 25%;
+}  
+
+.work .section-bd .item-hd .item-more { 
+    position: absolute;
+    right: 0;
+    margin-top: 1px;
+    font-size:15px;
+    float: right;
+    margin-right: 20px;
+} 
+.work .section-bd .item-hd .item-school {
+    display: inline-block;
+    font-size:16px;
+    padding-left:30px;
+/*border:1px solid red;*/
+}
 
 /*尾部*/
 footer.print-footer {
@@ -400,10 +437,8 @@ footer.print-footer {
 }
 footer {
     text-align: center;
-  
     background-color: #333;
 	padding: 5px 0;
-  
     height:20px;  /*////*/
 }
 
@@ -415,15 +450,11 @@ footer:after{
 
 footer .footer-link {
     margin-top: 20px;
-}
-footer .footer-link {
+
     display: inline-block;
     color: #d1d1d1;
     margin-bottom: 20px;
 }
 
-.center {
-    //text-align: center;
-}
 
 
